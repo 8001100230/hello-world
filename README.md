@@ -1,90 +1,144 @@
-# Welcome to GitHub
+Math 181 Miniproject 1: Modeling and Calculus.md
+---
+Math 181 Miniproject 1: Modeling and Calculus
+===
 
-Welcome to GitHub—where millions of developers work together on software. Ready to get started? Let’s learn how this all works by building and publishing your first GitHub Pages website!
+**Overview:** In this miniproject you will use technological tools to turn data and into models of real-world quantitative phenomena, then apply the principles of the derivative to them to extract information about how the quantitative relationship changes. 
 
-## Repositories
+**Prerequisites:** Sections 1.1--1.5 in *Active Calculus*, specifically the concept of the derivative and how to construct estimates of the derivative using forward, backward and central differences. Also basic knowledge of how to use Desmos. 
 
-Right now, we’re in your first GitHub **repository**. A repository is like a folder or storage space for your project. Your project's repository contains all its files such as code, documentation, images, and more. It also tracks every change that you—or your collaborators—make to each file, so you can always go back to previous versions of your project if you make any mistakes.
+---
 
-This repository contains three important files: The HTML code for your first website on GitHub, the CSS stylesheet that decorates your website with colors and fonts, and the **README** file. It also contains an image folder, with one image file.
+:::info
+1\. The table below gives the distance that a car will travel after applying the brakes at a given speed.
+| Speed (in mi/h) 	| Distance to stop (in ft) 	|
+|-----------------	|--------------------------	|
+| 10              	| 5                        	|
+| 20              	| 19                       	|
+| 30              	| 43                       	|
+| 40              	| 76.5                     	|
+| 50              	| 120                      	|
+| 60              	| 172                      	|
+| 70              	| 234                      	|
 
-## Describe your project
+(a) Find a function $f(x)$ that outputs stopping distance when you input speed. This will just be an approximation. To obtain this function we will first make a table in Desmos. The columns should be labled $x_1$ and $y_1$. Note that the points are plotted nicely when you enter them into the table. Click on the wrench to change the scale of the graph to fit the data better. Since the graph has the shape of a parabola we hope to find a quadratric formula for $f(x)$. In a new cell in Desmos type
+\\[
+y_1\sim ax_1^2+bx_1+c
+\\]
+and let it come up with the best possible quadratic model. Use the suggested values of $a$, $b$, and $c$ to make a formula for $f(x)$.
+:::
 
-You are currently viewing your project's **README** file. **_README_** files are like cover pages or elevator pitches for your project. They are written in plain text or [Markdown language](https://guides.github.com/features/mastering-markdown/), and usually include a paragraph describing the project, directions on how to use it, who authored it, and more.
-
-[Learn more about READMEs](https://help.github.com/en/articles/about-readmes)
-
-## Your first website
-
-**GitHub Pages** is a free and easy way to create a website using the code that lives in your GitHub repositories. You can use GitHub Pages to build a portfolio of your work, create a personal website, or share a fun project that you coded with the world. GitHub Pages is automatically enabled in this repository, but when you create new repositories in the future, the steps to launch a GitHub Pages website will be slightly different.
-
-[Learn more about GitHub Pages](https://pages.github.com/)
-
-## Rename this repository to publish your site
-
-We've already set-up a GitHub Pages website for you, based on your personal username. This repository is called `hello-world`, but you'll rename it to: `username.github.io`, to match your website's URL address. If the first part of the repository doesn’t exactly match your username, it won’t work, so make sure to get it right.
-
-Let's get started! To update this repository’s name, click the `Settings` tab on this page. This will take you to your repository’s settings page. 
-
-![repo-settings-image](https://user-images.githubusercontent.com/18093541/63130482-99e6ad80-bf88-11e9-99a1-d3cf1660b47e.png)
-
-Under the **Repository Name** heading, type: `username.github.io`, where username is your username on GitHub. Then click **Rename**—and that’s it. When you’re done, click your repository name or browser’s back button to return to this page.
-
-<img width="1039" alt="rename_screenshot" src="https://user-images.githubusercontent.com/18093541/63129466-956cc580-bf85-11e9-92d8-b028dd483fa5.png">
-
-Once you click **Rename**, your website will automatically be published at: https://your-username.github.io/. The HTML file—called `index.html`—is rendered as the home page and you'll be making changes to this file in the next step.
-
-Congratulations! You just launched your first GitHub Pages website. It's now live to share with the entire world
-
-## Making your first edit
-
-When you make any change to any file in your project, you’re making a **commit**. If you fix a typo, update a filename, or edit your code, you can add it to GitHub as a commit. Your commits represent your project’s entire history—and they’re all saved in your project’s repository.
-
-With each commit, you have the opportunity to write a **commit message**, a short, meaningful comment describing the change you’re making to a file. So you always know exactly what changed, no matter when you return to a commit.
-
-## Practice: Customize your first GitHub website by writing HTML code
-
-Want to edit the site you just published? Let’s practice commits by introducing yourself in your `index.html` file. Don’t worry about getting it right the first time—you can always build on your introduction later.
-
-Let’s start with this template:
-
-```
-<p>Hello World! I’m [username]. This is my website!</p>
-```
-
-To add your introduction, copy our template and click the edit pencil icon at the top right hand corner of the `index.html` file.
-
-<img width="997" alt="edit-this-file" src="https://user-images.githubusercontent.com/18093541/63131820-0794d880-bf8d-11e9-8b3d-c096355e9389.png">
+(a)
+    f(x)=0.047619x^2+0.0119048x-0.0714286
 
 
-Delete this placeholder line:
-
-```
-<p>Welcome to your first GitHub Pages website!</p>
-```
-
-Then, paste the template to line 15 and fill in the blanks.
-
-<img width="1032" alt="edit-githuboctocat-index" src="https://user-images.githubusercontent.com/18093541/63132339-c3a2d300-bf8e-11e9-8222-59c2702f6c42.png">
 
 
-When you’re done, scroll down to the `Commit changes` section near the bottom of the edit page. Add a short message explaining your change, like "Add my introduction", then click `Commit changes`.
 
 
-<img width="1030" alt="add-my-username" src="https://user-images.githubusercontent.com/18093541/63131801-efbd5480-bf8c-11e9-9806-89273f027d16.png">
+:::info
+(b) Estimate the stopping distance for a car that is traveling 43 mi/h.
+:::
 
-Once you click `Commit changes`, your changes will automatically be published on your GitHub Pages website. Refresh the page to see your new changes live in action.
+(b) 
+88.5 ft
 
-:tada: You just made your first commit! :tada:
 
-## Extra Credit: Keep on building!
 
-Change the placeholder Octocat gif on your GitHub Pages website by [creating your own personal Octocat emoji](https://myoctocat.com/build-your-octocat/) or [choose a different Octocat gif from our logo library here](https://octodex.github.com/). Add that image to line 12 of your `index.html` file, in place of the `<img src=` link.
+:::info
+(c\) Estimate the stopping distance for a car that is traveling 100 mi/h.
+:::
 
-Want to add even more code and fun styles to your GitHub Pages website? [Follow these instructions](https://github.com/github/personal-website) to build a fully-fledged static website.
+(c)
+477.3 ft
+:::info
+(d) Use the interval $[40,50]$ and a central difference to estimate the value of $f'(45)$. What is the interpretation of this value?
+:::
 
-![octocat](./images/create-octocat.png)
+(d) f'(45)=4.3
 
-## Everything you need to know about GitHub
 
-Getting started is the hardest part. If there’s anything you’d like to know as you get started with GitHub, try searching [GitHub Help](https://help.github.com). Our documentation has tutorials on everything from changing your repository settings to configuring GitHub from your command line.
+
+
+:::info
+(e) Use your function $f(x)$ on the interval $[44,46]$ and a central difference to estimate the value of $f'(45)$. How did this value compare to your estimate in the previous part?
+:::
+
+
+(e)
+The answer remains the same as 4.3
+
+
+
+:::info
+(f) Find the exact value of $f'(45)$ using the limit definition of derivative.
+:::
+
+(f)Here's a sample of how to write a limit using LaTeX code. $\lim_{h \to 0}\frac{f(x+h)-f(x)}{h}$
+
+
+
+
+
+
+
+:::success
+2\. Suppose that we want to know the number of squares inside a $50\times50$ grid. It doesn't seem practical to try to count them all. Notice that the squares come in many sizes.
+![A 50x50 grid](https://i.imgur.com/vm5fGdC.png =300x300)
+
+(a) Let $g(x)$ be the function that gives the number of squares in an $x\times x$ grid. Then $g(3)=14$ because there are $9+4+1=14$ squares in a $3\times 3$ grid as pictured below.
+![A 3x3 grid containing 9 1x1 squares, 4 2x2 squares and 1 3x3 square](https://i.imgur.com/JGhNudW.png =405x90)
+Find $g(1)$, $g(2)$, $g(4)$, and $g(5)$. 
+:::
+
+(a)g(1)=1, g(2)=5, g(4)=16+9+4+1=30, g(5)=25+16+9+4+1=55
+
+
+:::success
+(b) Enter the input and output values of $g(x)$ into a table in Desmos. Then adjust the window to display the plotted data. Include an image of the plot of the data (which be exported from Desmos using the share button ![A picture of a "share" icon](https://i.imgur.com/lQGRxeG.png)). Be sure to label your axes appropriately using the settings under the wrench icon ![A picture of a "grid" icon](https://i.imgur.com/rNnK775.png).
+:::
+
+(b)![](https://i.imgur.com/XjiyZLO.png)
+
+
+
+:::success
+(c\) Use a cubic function to approximate the data by entering
+\\[
+y_1\sim ax_1^3+bx_1^2+cx_1+d
+\\]
+into a new cell of Desmos (assuming the columns are labeled $x_1$ and $y_1$). Find an exact formula for $g(x)$.
+:::
+
+(c\)
+f(x)=0.333333x^3+ 0.5x^2+0.166667x+0
+
+
+:::success
+(d) How many squares are in a $50\times50$ grid? 
+:::
+
+(d)
+42924
+
+
+
+:::success
+(e) How many squares are in a $2000\times2000$ grid? 
+:::
+
+(e)
+2668664333
+
+
+:::success
+(f) Use a central difference on an appropriate interval to estimate $g'(4)$. What is the interpretation of this value? 
+:::
+
+(f)
+g'(4)=【g(4+1)-g(4-1)】/2*1= g(5)-g(3)】/2= 20.5
+
+---
+
+To submit this assignment click on the Publish button ![Publish button icon](https://i.imgur.com/Qk7vi9V.png). Then copy the url of the final document and submit it in Canvas.
+
